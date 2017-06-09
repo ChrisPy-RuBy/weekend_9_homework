@@ -19,8 +19,8 @@ public class BasketTest {
 
     @Before
     public void before() {
-        bread = new Bread("Hovis");
-        item = new Bread("Kingsmill");
+        bread = new Bread("Hovis", 1.23);
+        item = new Bread("Kingsmill", 1.23);
         basket = new Basket();
         basket2 = new Basket();
         basket3 = new Basket();

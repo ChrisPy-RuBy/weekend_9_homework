@@ -8,20 +8,10 @@ import static android.R.attr.name;
 
 public class Bread extends Item {
 
-    private String brand;
     private double value;
 
-    public Bread (String brand) {
-        this.brand = brand;
-        this.value = 1.23;
-
-    }
-
-    public String getBrand() {
-        return brand;
-    }
-
-    public double checkValue() {
-        return value;
+    public Bread (String brand, double value) {
+        super(brand, value);
+        this.value = value;
     }
 }

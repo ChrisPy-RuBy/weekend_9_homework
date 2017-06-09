@@ -6,13 +6,8 @@ package com.codeclan.example.shoppingbasketcode;
 
 public class Crisps extends Item {
 
-    private String brand;
-
-    public Crisps(String brand) {
-        this.brand = brand;
+    public Crisps(String brand, double value) {
+        super(brand, value);
     }
 
-    public String getBrand() {
-        return this.brand;
-    }
 }

@@ -11,13 +11,13 @@ public class PopTest {
 
     @Test
     public void popExists() {
-        Pop pop = new Pop("Coke");
+        Pop pop = new Pop("Coke", 1.10);
         assertNotNull(pop);
     }
 
     @Test
      public void getBrand() {
-        Pop pop = new Pop("Coke");
+        Pop pop = new Pop("Coke", 1.10);
         assertEquals("Coke", pop.getBrand());
 
 

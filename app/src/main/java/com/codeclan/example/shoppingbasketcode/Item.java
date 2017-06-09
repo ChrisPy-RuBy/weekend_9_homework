@@ -6,11 +6,11 @@ package com.codeclan.example.shoppingbasketcode;
 
 public abstract class Item implements Buyable {
 
-    private double value;
-    private String brand;
+    double value;
+    String brand;
 
-    public Item() {
-        this.value = 0.00;
+    public Item(String brand, double value) {
+        this.value = value;
         this.brand = brand;
     }
 

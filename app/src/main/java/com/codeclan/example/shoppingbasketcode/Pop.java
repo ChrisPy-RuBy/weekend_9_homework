@@ -4,18 +4,11 @@ package com.codeclan.example.shoppingbasketcode;
  * Created by mac on 6/9/17.
  */
 
-public class Pop {
+public class Pop extends Item {
 
-    private String brand;
-    private double value;
 
-    public  Pop(String brand) {
-        this.brand = brand;
-        this.value = 1.10;
+
+    public Pop(String brand, double value) {
+        super(brand, value);
     }
-
-    public String getBrand() {
-        return this.brand;
-    }
-
 }

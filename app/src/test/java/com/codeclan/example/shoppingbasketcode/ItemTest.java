@@ -18,9 +18,9 @@ public class ItemTest {
 
     @Before
     public void before() {
-        pop = new Pop("Coke");
-        crisps = new Crisps("Walkers");
-        bread = new Bread("Hovis");
+        pop = new Pop("Coke", 1.10);
+        crisps = new Crisps("Walkers", 1.23);
+        bread = new Bread("Hovis", 1.23);
     }
 
     @Test
@@ -41,6 +41,11 @@ public class ItemTest {
     @Test
     public void getCrispBrand() {
         assertEquals("Walkers", crisps.getBrand());
+    }
+
+    @Test
+    public void getBreadValue() {
+        assertEquals(1.23, bread.checkValue(), 0.01);
     }
 
 
