@@ -1,5 +1,6 @@
 package com.codeclan.example.shoppingbasketcode;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -9,24 +10,35 @@ import static org.junit.Assert.*;
  */
 public class BasketTest {
 
+    Basket basket;
+    Basket basket2;
 
+    @Before
+    public void before() {
+        basket = new Basket(1);
+        basket2 = new Basket(0);
+    }
 
     @Test
     public void basketExistsTest() {
-        Basket basket = new Basket(1);
         assertNotNull(basket);
     }
 
     @Test
     public void basketCanContainItem() {
-        Basket basket = new Basket(1);
         assertEquals(1, basket.numberOfItems());
     }
 
     @Test
     public void basketCanContainItemNotHardcoded() {
-        Basket basket = new Basket(0);
-        assertEquals(0, basket.numberOfItems());
+        assertEquals(0, basket2.numberOfItems());
+    }
+
+    @Test
+    public void canAddItemToBasket() {
+        basket.addItem(1);
+        assertEquals(2, basket.numberOfItems());
+
     }
 
 
