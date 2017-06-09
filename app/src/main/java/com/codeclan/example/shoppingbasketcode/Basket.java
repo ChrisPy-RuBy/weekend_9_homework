@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Basket {
 
-    private ArrayList<Item> basket = new ArrayList<Item>();
+    private ArrayList<Buyable> basket = new ArrayList<Buyable>();
 
 
     public Basket(){
@@ -20,11 +20,11 @@ public class Basket {
         return basket.size();
     }
 
-    public void addItem(Item item) {
+    public void addItem(Buyable item) {
         basket.add(item);
     }
 
-    public void removeItem(Item item) {
+    public void removeItem(Buyable item) {
         basket.remove(item);
     }
 //
@@ -32,9 +32,9 @@ public class Basket {
         basket.clear();
     }
 
-    public int checkTotalValue() {
-        int totalValue = 0;
-                for (Item item : basket) {
+    public float checkTotalValue() {
+        float totalValue = 0;
+                for (Buyable item : basket) {
                     totalValue += item.checkValue();
                 }
         return totalValue;

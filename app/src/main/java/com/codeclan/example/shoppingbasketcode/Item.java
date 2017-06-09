@@ -4,15 +4,15 @@ package com.codeclan.example.shoppingbasketcode;
  * Created by mac on 6/9/17.
  */
 
-public class Item {
+public class Item implements Buyable {
 
-    private int value;
+    private double value;
 
     public Item() {
-        this.value = 1;
+        this.value = 1.23;
     }
 
-    public int checkValue() {
+    public double checkValue() {
         return value;
     }
 }

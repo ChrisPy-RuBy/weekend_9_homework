@@ -29,4 +29,8 @@ Additionally, you must be able to calculate the total value of the shopping bask
 
 Here obviously it is required that each item has an identity i.e. a name and price, so I think due to the potential complexity here it would be best to take this out to seperate item class. It is tempting to use a HashMap but I think that I would just just end up using a class anyway so might as well just start now.
 
+Update
+
+OK, so have created an item class that can be placed in the basket. This fine and in spec but not very realistic so I will now spend some time flushing out the details. Specifically I want the values to be floats or doubles and I want to abstract items out into multiple items with different properties and values. This might be how I will create the value features for the BOGOF features etc.
+
 

@@ -26,7 +26,7 @@ public class ItemTest {
 
     @Test
     public void itemHasValue() {
-        assertEquals(1, item.checkValue());
+        assertEquals(1.23, item.checkValue(), 0.01);
     }
 
 

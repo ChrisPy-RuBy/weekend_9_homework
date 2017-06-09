@@ -72,17 +72,17 @@ public class BasketTest {
     @Test
     public void itemsInBasketHaveValue() {
         basket.addItem(item);
-        assertEquals(1, basket.checkTotalValue());
+        assertEquals(1.23, basket.checkTotalValue(), 0.01);
     }
 
     @Test
     public void itemsInBasketHaveValueOtherValue() {
         basket.addItem(item);
         basket.addItem(item);
-        assertEquals(2, basket.checkTotalValue());
+        assertEquals(2.46, basket.checkTotalValue(), 0.01);
     }
 
-    
+
 
 
 
