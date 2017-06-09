@@ -12,11 +12,14 @@ public class BasketTest {
 
     Basket basket;
     Basket basket2;
+    Basket basket3;
+
 
     @Before
     public void before() {
         basket = new Basket(1);
         basket2 = new Basket(0);
+        basket3 = new Basket(5);
     }
 
     @Test
@@ -40,6 +43,29 @@ public class BasketTest {
         assertEquals(2, basket.numberOfItems());
 
     }
+
+    @Test
+    public void canAddZeroToBasket() {
+        basket2.addItem(0);
+        assertEquals(0, basket2.numberOfItems());
+    }
+
+    @Test
+    public void canRemoveItemFromBasket() {
+        basket.removeItem(1);
+        assertEquals(0, basket2.numberOfItems());
+    }
+
+    @Test
+    public void canClearItemsAllItemsFromBasket() {
+        basket3.clearItem();
+        assertEquals(0, basket3.numberOfItems());
+
+    }
+
+
+
+
 
 
 }

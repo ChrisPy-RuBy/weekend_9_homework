@@ -21,4 +21,12 @@ public class Basket {
     public void addItem(int i) {
         basketSize += i;
     }
+
+    public void removeItem(int i) {
+        basketSize += i;
+    }
+
+    public void clearItem() {
+        basketSize = 0;
+    }
 }
