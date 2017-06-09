@@ -5,4 +5,16 @@ package com.codeclan.example.shoppingbasketcode;
  */
 
 public class Basket {
+
+    private int basketSize;
+
+
+    public Basket(int basketSize){
+        this.basketSize = basketSize;
+
+    }
+
+    public int numberOfItems() {
+        return this.basketSize;
+    }
 }
