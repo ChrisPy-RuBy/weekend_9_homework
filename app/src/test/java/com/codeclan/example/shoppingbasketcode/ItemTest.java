@@ -12,21 +12,35 @@ public class ItemTest {
 
     Item item;
     Item item2;
+    Pop pop;
+    Crisps crisps;
+    Bread bread;
 
     @Before
     public void before() {
-        item = new Item();
-        item2 = new Item();
+        pop = new Pop("Coke");
+        crisps = new Crisps("Walkers");
+        bread = new Bread("Hovis");
     }
 
     @Test
     public void itemExists() {
-        assertNotNull(item);
+        assertNotNull(pop);
     }
 
     @Test
     public void itemHasValue() {
-        assertEquals(1.23, item.checkValue(), 0.01);
+        assertEquals(1.23, bread.checkValue(), 0.01);
+    }
+
+    @Test
+    public void getPopBrand() {
+        assertEquals("Coke", pop.getBrand());
+    }
+
+    @Test
+    public void getCrispBrand() {
+        assertEquals("Walkers", crisps.getBrand());
     }
 
 

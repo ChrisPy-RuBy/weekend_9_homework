@@ -13,12 +13,14 @@ public class BasketTest {
     Basket basket;
     Basket basket2;
     Basket basket3;
-    Item item;
+    Buyable item;
+    Buyable bread;
 
 
     @Before
     public void before() {
-        item = new Item();
+        bread = new Bread("Hovis");
+        item = new Bread("Kingsmill");
         basket = new Basket();
         basket2 = new Basket();
         basket3 = new Basket();
@@ -81,6 +83,13 @@ public class BasketTest {
         basket.addItem(item);
         assertEquals(2.46, basket.checkTotalValue(), 0.01);
     }
+
+    @Test
+    public void canPassBreadToBasket() {
+        basket.addItem(bread);
+        assertEquals(1, basket.numberOfItems());
+    }
+
 
 
 
