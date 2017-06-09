@@ -1,32 +1,42 @@
 package com.codeclan.example.shoppingbasketcode;
 
+import java.util.ArrayList;
+
 /**
  * Created by mac on 6/9/17.
  */
 
 public class Basket {
 
-    private int basketSize;
+    private ArrayList<Item> basket = new ArrayList<Item>();
 
 
-    public Basket(int basketSize){
-        this.basketSize = basketSize;
+    public Basket(){
+
 
     }
 
     public int numberOfItems() {
-        return this.basketSize;
+        return basket.size();
     }
 
-    public void addItem(int i) {
-        basketSize += i;
+    public void addItem(Item item) {
+        basket.add(item);
     }
 
-    public void removeItem(int i) {
-        basketSize += i;
+    public void removeItem(Item item) {
+        basket.remove(item);
     }
-
+//
     public void clearItem() {
-        basketSize = 0;
+        basket.clear();
+    }
+
+    public int checkTotalValue() {
+        int totalValue = 0;
+                for (Item item : basket) {
+                    totalValue += item.checkValue();
+                }
+        return totalValue;
     }
 }

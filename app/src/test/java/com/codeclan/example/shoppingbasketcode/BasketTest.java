@@ -13,13 +13,15 @@ public class BasketTest {
     Basket basket;
     Basket basket2;
     Basket basket3;
+    Item item;
 
 
     @Before
     public void before() {
-        basket = new Basket(1);
-        basket2 = new Basket(0);
-        basket3 = new Basket(5);
+        item = new Item();
+        basket = new Basket();
+        basket2 = new Basket();
+        basket3 = new Basket();
     }
 
     @Test
@@ -29,39 +31,58 @@ public class BasketTest {
 
     @Test
     public void basketCanContainItem() {
+        basket.addItem(item);
         assertEquals(1, basket.numberOfItems());
     }
 
     @Test
     public void basketCanContainItemNotHardcoded() {
-        assertEquals(0, basket2.numberOfItems());
-    }
-
-    @Test
-    public void canAddItemToBasket() {
-        basket.addItem(1);
+        basket.addItem(item);
+        basket.addItem(item);
         assertEquals(2, basket.numberOfItems());
-
     }
-
-    @Test
-    public void canAddZeroToBasket() {
-        basket2.addItem(0);
-        assertEquals(0, basket2.numberOfItems());
-    }
-
+//
+//    @Test
+//    public void canAddItemToBasket() {
+//        basket.addItem(1);
+//        assertEquals(2, basket.numberOfItems());
+//
+//    }
+//
+//    @Test
+//    public void canAddZeroToBasket() {
+//        basket2.addItem(0);
+//        assertEquals(0, basket2.numberOfItems());
+//    }
+//
     @Test
     public void canRemoveItemFromBasket() {
-        basket.removeItem(1);
+        basket.addItem(item);
+        basket.removeItem(item);
         assertEquals(0, basket2.numberOfItems());
+    }
+//
+    @Test
+    public void canClearItemsAllItemsFromBasket() {
+        basket.addItem(item);
+        basket3.clearItem();
+        assertEquals(0, basket3.numberOfItems());
     }
 
     @Test
-    public void canClearItemsAllItemsFromBasket() {
-        basket3.clearItem();
-        assertEquals(0, basket3.numberOfItems());
-
+    public void itemsInBasketHaveValue() {
+        basket.addItem(item);
+        assertEquals(1, basket.checkTotalValue());
     }
+
+    @Test
+    public void itemsInBasketHaveValueOtherValue() {
+        basket.addItem(item);
+        basket.addItem(item);
+        assertEquals(2, basket.checkTotalValue());
+    }
+
+    
 
 
 
