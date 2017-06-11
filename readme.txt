@@ -44,7 +44,14 @@ So I've now added a buyable interface, and I'm also trying to make items an abst
 
 Update
 
-I have a method that checks the number of instances of bread in the basket. I will now extend the class to have a method that determines if there number is odd or even and then another to calculate the discounts. If the number is even then this is even then is easy but if odd I will have to create another method the calculates the discount for the nearest even number 
+I have a method that checks the number of instances of bread in the basket. I will now extend the class to have a method that determines if there number is odd or even and then another to calculate the discounts. If the number is even then this is even then is easy but if odd I will have to create another method the calculates the discount for the nearest even number.
 
+Update
+Made bogof for bread, was easier than expected. I will now move on to the other tasks. The basket class is becoming a bit crowded so it might be worth creating a Discount class to calculate the various discounts etc
 
+Update
+created a checkout class to deal with the discounts etc and calculating the final total. Will now create the loyality and over £20 discount.
+
+Update
+Made both these methods, so now have 3 different methods for calculating different discounts. Need to make sure that they work together correctly
 
