@@ -1,4 +1,4 @@
-package com.codeclan.example.shoppingbasketcode;
+package com.codeclan.example.shoppingbasketcode.ItemsTest;
 
 import static org.junit.Assert.*;
 

@@ -1,4 +1,4 @@
-package com.codeclan.example.shoppingbasketcode;
+package com.codeclan.example.shoppingbasketcode.Items;
 
 /**
  * Created by mac on 6/9/17.

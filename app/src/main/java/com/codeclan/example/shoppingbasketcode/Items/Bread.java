@@ -1,6 +1,4 @@
-package com.codeclan.example.shoppingbasketcode;
-
-import static android.R.attr.name;
+package com.codeclan.example.shoppingbasketcode.Items;
 
 /**
  * Created by mac on 6/9/17.

@@ -1,5 +1,10 @@
 package com.codeclan.example.shoppingbasketcode;
 
+import com.codeclan.example.shoppingbasketcode.Items.Bread;
+import com.codeclan.example.shoppingbasketcode.Items.Buyable;
+import com.codeclan.example.shoppingbasketcode.Items.Crisps;
+import com.codeclan.example.shoppingbasketcode.Items.Pop;
+
 import org.junit.Before;
 import org.junit.Test;
 
@@ -159,6 +164,7 @@ public class BasketTest {
         basket.checkInstancesofBread();
         assertEquals(0, basket.calcDiscountEven(), 0.01);
     }
+
 
 
 

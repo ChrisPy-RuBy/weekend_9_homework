@@ -1,5 +1,7 @@
 package com.codeclan.example.shoppingbasketcode;
 
+import com.codeclan.example.shoppingbasketcode.Items.Buyable;
+
 import java.util.ArrayList;
 
 /**

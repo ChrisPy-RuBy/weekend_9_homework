@@ -1,4 +1,9 @@
-package com.codeclan.example.shoppingbasketcode;
+package com.codeclan.example.shoppingbasketcode.ItemsTest;
+
+import com.codeclan.example.shoppingbasketcode.Items.Bread;
+import com.codeclan.example.shoppingbasketcode.Items.Crisps;
+import com.codeclan.example.shoppingbasketcode.Items.Item;
+import com.codeclan.example.shoppingbasketcode.Items.Pop;
 
 import org.junit.Before;
 import org.junit.Test;
