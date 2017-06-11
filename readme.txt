@@ -37,5 +37,14 @@ OK, so have created an item class that can be placed in the basket. This fine an
 
  Refactored the code so that I can use floats now instead and add a buyable interface.
 
- 
+
+Update
+
+So I've now added a buyable interface, and I'm also trying to make items an abstract class, I want it so that you can call all the methods includes on the abstract parent class but I can't seem to make this work at the moment. I should be able to do this using super but not really 100 % on how to do this. Will ask on MOnday. I will now move on to trying to create the bogof feature.
+
+Update
+
+I have a method that checks the number of instances of bread in the basket. I will now extend the class to have a method that determines if there number is odd or even and then another to calculate the discounts. If the number is even then this is even then is easy but if odd I will have to create another method the calculates the discount for the nearest even number 
+
+
 

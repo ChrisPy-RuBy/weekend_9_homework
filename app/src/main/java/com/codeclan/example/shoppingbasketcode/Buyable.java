@@ -8,4 +8,6 @@ public interface Buyable {
 
     double checkValue();
 
+    String  itemType();
+
 }

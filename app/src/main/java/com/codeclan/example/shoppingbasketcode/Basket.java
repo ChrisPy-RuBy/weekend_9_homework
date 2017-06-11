@@ -9,9 +9,11 @@ import java.util.ArrayList;
 public class Basket {
 
     private ArrayList<Buyable> basket = new ArrayList<Buyable>();
+    private int instancesOfBread;
 
 
     public Basket(){
+        this.instancesOfBread = 0;
 
 
     }
@@ -38,5 +40,38 @@ public class Basket {
                     totalValue += item.checkValue();
                 }
         return totalValue;
+    }
+
+    public int checkInstancesofBread() {
+         for (Buyable item : basket) {
+             String itemType = item.itemType();
+            if (itemType.equals("bread")) {
+                instancesOfBread += 1;
+             }
+             else {
+                instancesOfBread += 0;
+            }
+        }
+        return instancesOfBread;
+    }
+
+    public boolean checkInstancesofBreadOddEven() {
+        if (instancesOfBread % 2 == 0) {
+            return true;
+
+        }
+        else {
+            return false;
+        }
+    }
+
+
+    public double calcDiscountEven() {
+        if (instancesOfBread % 2 == 0) {
+            return ((instancesOfBread / 2) * 1.23);
+        }
+        else {
+            return (((instancesOfBread - 1)/2) * 1.23);
+        }
     }
 }

@@ -10,4 +10,8 @@ public class Crisps extends Item {
         super(brand, value);
     }
 
+    public String itemType() {
+        return "crisps";
+    }
+
 }

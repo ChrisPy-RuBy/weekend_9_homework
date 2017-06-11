@@ -11,4 +11,8 @@ public class Pop extends Item {
     public Pop(String brand, double value) {
         super(brand, value);
     }
+
+    public String itemType() {
+        return "pop";
+    }
 }

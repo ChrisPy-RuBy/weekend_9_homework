@@ -14,4 +14,8 @@ public class Bread extends Item {
         super(brand, value);
         this.value = value;
     }
+
+    public String itemType() {
+        return "bread";
+    }
 }
